@@ -29,10 +29,10 @@ plugins:
 
 # Site Author
 author:
-  name             : "Gabrielle Browne"
-  avatar           : "assets/images/gabrielle_siggraph_2026.jpg"
-  bio              : "I recently graduated from the University of Toronto and I'll be starting a PhD in Computer Science at Yale University in Fall 2026."
-  location         : "Toronto, Ontario, Canada -> New Haven, Connecticut, USA"
+  name             : ""
+  avatar           : ""
+  bio              : ""
+  location         : "Toronto, Ontario, Canada"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
