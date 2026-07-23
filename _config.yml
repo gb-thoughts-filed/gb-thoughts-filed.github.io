@@ -1,0 +1,82 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that.
+
+locale                   : "en-US"
+title                    : ""
+title_separator          : "-"
+subtitle                 : ""
+name                     : "Gabrielle Browne"
+description              : ""
+url                      : "https://gb-thoughts-filed.github.io" # the base hostname & protocol for your site
+repository               : "gb-thoughts-filed/gb-thoughts-filed.github.io" # GitHub username/repo-name
+teaser                   : # path of fallback teaser image
+
+# Theme
+remote_theme             : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Build settings
+markdown                 : kramdown
+remote_theme             : mmistakes/minimal-mistakes
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# Site Author
+author:
+  name             : "Gabrielle Browne"
+  avatar           : "assets/images/gabrielle_siggraph_2026.jpg"
+  bio              : "I recently graduated from the University of Toronto and I'll be starting a PhD in Computer Science at Yale University in Fall 2026."
+  location         : "Toronto, Ontario, Canada -> New Haven, Connecticut, USA"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto: gabrielle dot browne at yale dot edu"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/gb-thoughts-filed"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/gabrielle-browne-05315589/"
+    - label: "CV / Resume"
+      icon: "fas fa-fw fa-file-pdf"
+      url: "assets/Gabrielle Browne CV.pdf"
+
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/gb-thoughts-filed"
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
