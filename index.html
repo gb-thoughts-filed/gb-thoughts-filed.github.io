@@ -6,6 +6,12 @@ permalink: /
 ---
 
 <style>
+.masthead {
+  display: none;
+}
+</style>
+
+<style>
 .page__title {
   text-align: center;
 }
@@ -23,6 +29,6 @@ Please checkout my recent work linked below:
 
 {% include figure image_path="assets/images/lion_lion_teaser.png" alt="lion" %}
 
-[MorphModes: Non-rigid Registration via Adaptive Skinning Eigenmodes](https://arxiv.org/abs/2510.18658)
+<a href="https://arxiv.org/abs/2510.18658" target="_blank" rel="noopener">MorphModes: Non-rigid Registration via Adaptive Skinning Eigenmodes</a>
 
 Non-rigid registration is a crucial task with applications in medical imaging, industrial robotics, computer vision, and entertainment. Standard approaches accomplish this task using variations on the Non-Rigid Iterative Closest Point (NRICP) algorithms, which are prone to local minima and sensitive to initial conditions. We instead formulate the non-rigid registration problem as a Signed Distance Function (SDF) matching optimization problem, which provides richer shape information compared to traditional ICP methods. To avoid degenerate solutions, we propose to use a smooth Skinning Eigenmode subspace to parameterize the optimization problem. Finally, we propose an adaptive subspace optimization scheme to allow the resolution of localized deformations within the optimization. The result is a non-rigid registration algorithm that is more robust than NRICP, without the parameter sensitivity present in other SDF-matching approaches.
